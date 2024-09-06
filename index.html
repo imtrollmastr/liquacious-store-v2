@@ -1,6 +1,27 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://store.liquacious.org/static/font.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between; /* Space between the image links */
+            gap: 20px; /* Adjust spacing between the image links */
+            padding: 20px; /* Optional padding around the container */
+        }
+
+        .image-container a {
+            display: block; /* Ensures the anchor takes up space like a block element */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto;
+            max-height: 100vh; /* Prevent images from being taller than the viewport */
+            border: 1px solid #ccc; /* Optional: adds a border around images */
+        }
+    </style>
     <style>
       .time {
         margin: 10px;
@@ -40,16 +61,10 @@
       updateTime();
     </script>
     <h3 style="margin: 10px; color: white;">Liquacious Library</h3>
-    <div class="row">
-      <div class="column">
-        <a href="https://store.liquacious.org/cdn/liquacious_issue01.pdf"><img src="https://store.liquacious.org/cdn/issue01_cover.png" height="300" width="200" style="width:220px; height:340px;">></a>
-      </div>
-      <div class="column">
-        <a href="https://store.liquacious.org/cdn/liquacious_issue02.pdf"><img src="https://store.liquacious.org/cdn/issue02_cover.png" height="300" width="200" style="width:220px; height:340px;">></a>
-      </div>
-      <div class="column">
-        <a href="https://store.liquacious.org/cdn/liquacious_issue03.pdf"><img src="https://store.liquacious.org/cdn/blank.png" height="300" width="200" style="width:220px; height:340px;">></a>
-      </div>
+    <div class="image-container">
+      <a href="https://store.liquacious.org/cdn/liquacious_issue01.pdf"><img src="https://store.liquacious.org/cdn/issue01_cover.png" height="300" width="200" style="width:220px; height:340px;"></a>
+      <a href="https://store.liquacious.org/cdn/liquacious_issue02.pdf"><img src="https://store.liquacious.org/cdn/issue02_cover.png" height="300" width="200" style="width:220px; height:340px;"></a>
+      <a href="https://store.liquacious.org/cdn/liquacious_issue03.pdf"><img src="https://store.liquacious.org/cdn/blank.png" height="300" width="200" style="width:220px; height:340px;"></a>
     </div>
     <div class="row">
       <div class="column">
