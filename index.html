@@ -7,37 +7,9 @@
         margin: 10px;
       }
     </style>
-    <script>
-      function getCookie(cname) {
-        let name = cname + "=";
-        let decodedCookie = decodeURIComponent(document.cookie);
-        let ca = decodedCookie.split(';');
-        for(let i = 0; i <ca.length; i++) {
-          let c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
-      const parameter = window.location.search
-      if (parameter.startsWith("?storeCookie=") == true) {
-        document.cookie = "student_email = " + parameter.split("?storeCookie=")[1]
-        window.location.href="https://store.liquacious.org/"
-      } else {
-        if (getCookie("student_email") == "") {
-          window.location.href="https://liquacious.org/login"
-        } else {
-
-        }
-      }
-    </script>
   </head>
-  <body>
-    <p id="time" class="time"></p>
+  <body style="background-color: black;">
+    <p style="color: white;" id="time" class="time"></p>
     <script>
       const timeElement = document.getElementById("time");
       function updateTime() {
