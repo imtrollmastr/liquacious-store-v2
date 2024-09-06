@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://store.liquacious.org/static/font.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .time {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="time" class="time"></p>
+    <script>
+      const timeElement = document.getElementById("time");
+      function updateTime() {
+          const now = new Date();
+          const date = now.getDay() + " " + now.getMonth() + " " + now.getFullYear()
+          const hours = now.getHours().toString().padStart(2, "0");
+          const minutes = now.getMinutes().toString().padStart(2, "0");
+          const seconds = now.getSeconds().toString().padStart(2, "0");
+          const timeString = hours + ":" + minutes + ":" + seconds;
+          timeElement.textContent = date + " " + timeString;
+      }
+      // Call updateTime every second (1000 milliseconds)
+      setInterval(updateTime, 1000);
+      // Initial call to display the time immediately
+      updateTime();
+    </script>
+    <br>
+    <br>
+    <br>
+    <div><a href="https://store.liquacious.org/cdn/liquacious_issue01.pdf"><img src="https://store.liquacious.org/cdn/issue01_cover.png" height="300" width="200"></a></div>
+    <br>
+    <div><a href="https://store.liquacious.org/cdn/liquacious_issue02.pdf"><img src="https://store.liquacious.org/cdn/issue02_cover.png" height="300" width="200"></a></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <div>
+        <a href="#" style="color: black;">HELP</a>
+        <a href="#" style="color: black;">PRIVACY</a>
+        <a href="#" style="color: black;">TERMS</a>
+        <a href="#" style="color: black;">DO NOT SELL MY PERSONAL INFORMATION</a>
+      </div>
+    </footer>
+  </body>
+</html>
